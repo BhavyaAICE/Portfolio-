@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bhavya Gupta - Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div id="transition-cover"></div>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text" id="loadingText">BHAVYA GUPTA</div>
+        <canvas id="dissolveCanvas"></canvas>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <canvas id="particleCanvas"></canvas>
+        <a href="mailto:bhavyagupta294@gmail.com" class="vertical-email">bhavyagupta294@gmail.com </a>
+
+        <div id="fullpage-container">
+            <section class="page-section hero" data-title="Home">
+                 <div class="hero-content">
+                    <div class="hero-left">
+                        <p class="hero-intro has-animation">Hi! I'm Bhavya.</p>
+                        <h1 class="hero-title has-animation">
+                            <span>Fullstack</span> Developer
+                        </h1>
+                        <p class="hero-description has-animation">
+                            A passionate developer just starting my journey. I love building beautiful, responsive websites and learning new technologies.
+                        </p>
+                        <a href="#" id="hero-cta-button" class="cta-button has-animation">Get In Touch</a>
+                    </div>
+                    <div class="hero-right">
+                        <ul class="stats-list">
+                            <li class="stat-item has-animation" style="transition-delay: 0.5s;">
+                                <div class="stat-number">1</div>
+                                <div class="stat-label">Year of Learning</div>
+                            </li>
+                            <li class="stat-item has-animation" style="transition-delay: 0.6s;">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Completed Projects</div>
+                            </li>
+                            <li class="stat-item has-animation" style="transition-delay: 0.7s;">
+                                <div class="stat-number">400+</div>
+                                <div class="stat-label">Hours Coded</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scroll-indicator">Scroll Down ↓</div>
+            </section>
+
+            <section class="page-section about" data-title="About">
+                <div class="about-content has-animation">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="has-animation" style="transition-delay: 0.5s;">I'm a Fullstack Developer based in Jaipur, India, with a deep passion for creating elegant, efficient, and user-friendly digital experiences. My journey into code began with a simple curiosity that has since blossomed into a full-fledged obsession with building things for the web.</p>
+                        <p class="has-animation" style="transition-delay: 0.6s;">I thrive on turning complex problems into simple, beautiful, and intuitive designs. I'm always eager to learn and apply new technologies to my work. I believe that the best applications are not just functional, but also create a lasting impression.</p>
+                    </div>
+                    <div class="about-image has-animation" style="transition-delay: 0.7s;">
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section skills" data-title="Skills">
+                <div class="skills-content has-animation">
+                    <h2 class="section-title">My Stack</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3 class="has-animation" style="transition-delay: 0.3s;">Frontend</h3>
+                            <div class="logo-grid">
+                                <div class="skill-logo-item has-animation" style="transition-delay: 0.4s;">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" alt="HTML5 Logo">
+                                    <span class="logo-name">HTML5</span>
+                                </div>
+                                <div class="skill-logo-item has-animation" style="transition-delay: 0.5s;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3 Logo">
+                                    <span class="logo-name">CSS3</span>
+                                </div>
+                                <div class="skill-logo-item has-animation" style="transition-delay: 0.6s;">
+                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo">
+                                    <span class="logo-name">JavaScript</span>
+                                </div>
+                                <div class="skill-logo-item has-animation" style="transition-delay: 0.7s;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                                    <span class="logo-name">React</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="has-animation" style="transition-delay: 0.8s;">Backend</h3>
+                            <div class="logo-grid">
+                               <div class="skill-logo-item has-animation" style="transition-delay: 0.9s;">
+                                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png" alt="Node.js Logo">
+                                   <span class="logo-name">Node.js</span>
+                               </div>
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.0s;">
+                                   <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="FastAPI Logo">
+                                   <span class="logo-name">FastAPI</span>
+                               </div>
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.1s;">
+                                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png" alt="Python Logo">
+                                   <span class="logo-name">Python</span>
+                               </div>
+                            </div>
+                        </div>
+
+                         <div class="skill-category">
+                            <h3 class="has-animation" style="transition-delay: 1.2s;">Database</h3>
+                            <div class="logo-grid">
+                                <div class="skill-logo-item has-animation" style="transition-delay: 1.3s;">
+                                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-3521676-2945120.png" alt="MongoDB Logo">
+                                   <span class="logo-name">MongoDB</span>
+                               </div>
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.4s;">
+                                   <img src="https://toppng.com/uploads/preview/mysql-logo-11609369802ki7rjpbtse.png" alt="SQL Logo">
+                                   <span class="logo-name">SQL</span>
+                               </div>
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.5s;">
+                                   <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase Logo">
+                                   <span class="logo-name">Supabase</span>
+                               </div>
+                            </div>
+                        </div>
+                         <div class="skill-category">
+                            <h3 class="has-animation" style="transition-delay: 1.6s;">Tools</h3>
+                            <div class="logo-grid" id="tools-grid">
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.7s;">
+                                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-git-225996.png" alt="Git Logo">
+                                   <span class="logo-name">Git</span>
+                               </div>
+                               <div class="skill-logo-item has-animation" style="transition-delay: 1.8s;">
+                                   <img src="https://x5h8w2v3.delivery.rocketcdn.me/wp-content/uploads/2024/03/Logo-Vercel.png" alt="Vercel Logo">
+                                   <span class="logo-name">Vercel</span>
+                               </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section projects" data-title="Projects">
+                <div class="projects-content has-animation">
+                     <div class="projects-list-container">
+                        <h2 class="section-title">My Projects</h2>
+                        <ul class="projects-list">
+                            <li class="project-list-item has-animation" style="transition-delay: 0.4s;">
+                                <a href="#project-internsavek" class="project-link" data-image="https://lh3.googleusercontent.com/d/1NEQ71DdETMTYHXQlXn8OPjCA7Japb4xo">
+                                   <span class="project-number">01</span>
+                                   <span class="project-title-wrapper" data-text="Internsavek">Internsavek</span>
+                                </a>
+                            </li>
+                            <li class="project-list-item has-animation" style="transition-delay: 0.5s;">
+                                <a href="#project-scoreapp" class="project-link" data-image="https://lh3.googleusercontent.com/d/11bbdmTW7lurFocTkFi8azL01zLbP_YQc">
+                                   <span class="project-number">02</span>
+                                   <span class="project-title-wrapper" data-text="Score App">Score App</span>
+                                </a>
+                            </li>
+                            <li class="project-list-item has-animation" style="transition-delay: 0.6s;">
+                                <a href="#project-medichain" class="project-link" data-image="https://lh3.googleusercontent.com/d/1YzlICbfvQ0aGmrHB1XyHZYGSASTzUvk2">
+                                   <span class="project-number">03</span>
+                                   <span class="project-title-wrapper" data-text="MediChain">MediChain</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-image-preview-container">
+                        <div id="project-hover-preview"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section contact" data-title="Contact">
+                <div class="contact-content">
+                     <h2 class="section-title has-animation">Get In Touch</h2>
+                     <p class="has-animation" style="transition-delay: 0.5s;">I'm currently open to new opportunities and collaborations. If you have a project in mind, a question, or just want to say hello, feel free to reach out!</p>
+                     <div class="contact-links has-animation" style="transition-delay: 0.6s;">
+                        <a href="https://www.linkedin.com/in/bhavya-gupta-12753531a" target="_blank" rel="noopener noreferrer" class="contact-icon-link">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:bhavyagupta294@gmail.com" class="contact-icon-link">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+                        </a>
+                     </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Project Detail Pages -->
+    <div class="project-detail-page" id="project-internsavek">
+         <a href="#" class="back-button">← Back</a>
+         <div class="detail-page-content">
+            <div class="detail-header">
+                <h1>Internsavek</h1>
+                <div class="detail-info">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Tech:</strong> FastAPI, Python, Eleven Labs API</span>
+                </div>
+            </div>
+            <div class="detail-gallery">
+                <div class="gallery-text-column">
+                    <div class="gallery-text-section">
+                        <h3>The Challenge</h3>
+                        <p>The world of product management internships is vast and often confusing for students. Many either don't know where to look or end up in roles that don't match their skills or career goals. The challenge was to create a centralized, intelligent platform to solve this problem by simplifying the discovery and application process.</p>
+                    </div>
+                    <div class="gallery-text-section">
+                        <h3>AI-Powered Solution</h3>
+                        <p>We developed 'Internsavek', an AI voice assistant that serves as a personal career counselor. By asking a series of targeted questions about a student's background, technical skills, and career aspirations, the assistant gathers key information to build a comprehensive user profile.</p>
+                    </div>
+                     <div class="gallery-text-section">
+                        <h3>Personalized Matching</h3>
+                        <p>Our custom-trained machine learning model processes the user's answers and cross-references them with a continuously updated database of current PM internships. It then returns the top 10 most suitable matches, each including a percentage score and a clear ranking. This makes it easy for students to identify their best options and apply with confidence, streamlining their journey into the world of product management.</p>
+                    </div>
+                </div>
+                <div class="gallery-image-column">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image">
+                            <img src="https://lh3.googleusercontent.com/d/1gC8cwTsDx4njBCv3QE192bC2PBBfTLiG" alt="Internsavek screenshot 1">
+                        </div>
+                        <div class="gallery-image">
+                             <img src="https://i.imgur.com/7z3mk0h.png" alt="Internsavek screenshot 2">
+                        </div>
+                        <div class="gallery-image">
+                           <img src="https://lh3.googleusercontent.com/d/1PXJ_FYqlXPhXwaRAB03RyxUyY3k9Zz7N" alt="Internsavek screenshot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="project-detail-page" id="project-scoreapp">
+        <a href="#" class="back-button">← Back</a>
+        <div class="detail-page-content">
+            <div class="detail-header">
+                <h1>Score App</h1>
+                <div class="detail-info">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Tech:</strong> React, Node.js, PostgreSQL</span>
+                </div>
+            </div>
+             <div class="detail-gallery">
+                <div class="gallery-text-column">
+                    <div class="gallery-text-section">
+                        <h3>The Challenge</h3>
+                        <p>Judging large-scale events like hackathons or competitions is complex. It involves multiple judges, teams, rounds, and weighted scoring categories. Manually calculating and normalizing scores is time-consuming and prone to error, and judge bias can unfairly influence results.</p>
+                    </div>
+                    <div class="gallery-text-section">
+                        <h3>A Centralized Solution</h3>
+                        <p>This Score App provides a comprehensive, real-time platform for event management. Admins can create events, define custom scoring categories with specific weights, and manage teams and judges. Judges get a clean, simple interface to enter scores, ensuring a smooth and efficient process from start to finish.</p>
+                    </div>
+                     <div class="gallery-text-section">
+                        <h3>Advanced Fair-Scoring</h3>
+                        <p>The app's core feature is its advanced normalization engine. It uses Z-score standardization to correct for individual judge leniency or strictness, ensuring every team is evaluated on a level playing field. The system aggregates these normalized scores, calculates percentiles, and generates a final, unbiased ranking, with options for manual admin overrides and detailed audit logs.</p>
+                    </div>
+                </div>
+                <div class="gallery-image-column">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image">
+                            <img src="https://lh3.googleusercontent.com/d/149kHoV-HvVcRGuD9PyopkYRDDd17cusn" alt="Score App screenshot 1">
+                        </div>
+                        <div class="gallery-image">
+                           <img src="https://lh3.googleusercontent.com/d/1RwGdCGni9IbTtWfmMx4WGN2VJdxFr24I" alt="Score App screenshot 2">
+                        </div>
+                         <div class="gallery-image">
+                           <img src="https://lh3.googleusercontent.com/d/11bbdmTW7lurFocTkFi8azL01zLbP_YQc" alt="Score App screenshot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-detail-page" id="project-medichain">
+        <a href="#" class="back-button">← Back</a>
+        <div class="detail-page-content">
+            <div class="detail-header">
+                <h1>MediChain</h1>
+                 <div class="detail-info">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Tech:</strong> Blockchain, Node.js, React, ZKP</span>
+                </div>
+            </div>
+            <div class="detail-gallery">
+                <div class="gallery-text-column">
+                     <div class="gallery-text-section">
+                        <h3>The Problem</h3>
+                        <p>Traditional healthcare systems keep medical records in isolated silos, giving patients little to no control over their own data. Sharing records between providers is cumbersome and insecure, and patients have no transparency into who is accessing their sensitive information.</p>
+                    </div>
+                    <div class="gallery-text-section">
+                        <h3>A Decentralized Solution</h3>
+                        <p>MediChain empowers patients by giving them complete ownership of their medical records through a decentralized platform. Using blockchain for consent management and IPFS for encrypted, off-chain storage, patients can grant or revoke access to their data in real-time. Every action is recorded on an immutable ledger, providing a transparent audit trail.</p>
+                    </div>
+                     <div class="gallery-text-section">
+                        <h3>Advanced Privacy & Access</h3>
+                        <p>The platform leverages Zero-Knowledge Proofs (ZKPs) to allow for data verification without exposing the raw medical records. For instance, an insurer can verify a claim's eligibility without ever seeing the full patient history. Additionally, a secure QR-code system grants temporary, limited access to first responders in emergency situations, ensuring critical information like blood type and allergies is available when it matters most.</p>
+                    </div>
+                </div>
+                <div class="gallery-image-column">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image">
+                             <img src="https://lh3.googleusercontent.com/d/1YzlICbfvQ0aGmrHB1XyHZYGSASTzUvk2" alt="MediChain screenshot 1">
+                        </div>
+                        <div class="gallery-image">
+                           <img src="https://lh3.googleusercontent.com/d/1BgmhbWovGBRGdU9Az72xy8IrxwdlLEi5" alt="MediChain screenshot 2">
+                        </div>
+                         <div class="gallery-image">
+                           <img src="https://lh3.googleusercontent.com/d/179bB1pnQOb_ho9DAS-BufnATtHQZyk6b" alt="MediChain screenshot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP (kept in HTML to load from CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
