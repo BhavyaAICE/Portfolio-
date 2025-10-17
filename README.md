@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website. This project is a fully animated, single-page application designed to showcase my skills and projects in a dynamic and engaging way. It's built from the ground up with a focus on modern web animations, smooth user experience, and interactive design.
 
-**🚀 [View the Live Demo](https://your-live-link-here.com)** *(<- Add your deployment link here!)*
+**🚀 [View the Live Demo](https://bhavyaguptaweb.me)
 
 ---
 
